@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+        body{
+    background-color: #dad7cd;
+}
+h1{
+    text-align: center;
+    font-family: "IBM Plex Sans", sans-serif;
+    letter-spacing: -1px;
+}
+    .box{
+        width: 100%;
+        height: 500px;
+        /*border: 1px solid red;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .card{
+        width:25%;
+        height: 450px;
+        border: 1px solid blue;
+        position: relative;
+        text-align: center;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    img{
+        width: 100%;
+        height: 230px;
+
+
+    }
+    span{
+        color: #fff;
+        position: absolute;
+       font-size: 40px;
+        right: 110px;
+        top: 180px;
+    }
+    .entity{
+        width: 100%;
+        height: 60px;
+        /*border: 1px solid blue;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 19px;
+    }
+    .entity>div{
+        width: 40%;
+        height: 30px;
+        /*border: 1px solid rebeccapurple;*/
+        text-align: center;
+        padding-top: 16px;
+
+        
+    }
+    p{
+        padding: 0px 5px;
+    }
+    a{
+        padding: 10px;
+        background-color: #669bbc;
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        background-color: #e76f51;
+    }
+
+    </style>
+
+</head>
+<body>
+    <div class="header">
+       <h1>
+        Flexbox Blog-Card
+       </h1>
+    </div>
+    <div class="box">
+        <div class="card">
+            <img src="./images/newyork.jpg" alt=""><span class="text">New York</span>
+            <div class="entity">
+                <div ><i class="fa fa-calendar" style="font-size:19px"></i>AUG 4</div>
+                <div><i class="fa fa-heart" style="font-size:19px"></i>102</div>
+            </div>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur incidunt et ipsam repellat! Debitis vel nemo ab? Asperiores, vitae esse. 
+            </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="card">
+            <img src="./images/Sanfrancisco.jpeg" alt=""><span class="text"style="right: 80px;">Sanfrancisco</span>
+            <div class="entity">
+                <div ><i class="fa fa-calendar" style="font-size:19px"></i>AUG 4</div>
+                <div><i class="fa fa-heart" style="font-size:19px"></i>102</div>
+            </div>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur incidunt et ipsam repellat! Debitis vel nemo ab? Asperiores, vitae esse. 
+            </p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+</body>
+</html>
